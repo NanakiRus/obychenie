@@ -30,12 +30,14 @@ echo goroda ($all, $char);
 <?php
 
 if (isset ($_POST['text'])) {
-    if (mb_substr ($_POST['text'], -1) == 'ь' || mb_substr ($_POST['text'], -1) == 'ъ' || mb_substr ($_POST['text'], -1) == 'ы') {
-        $text = mb_substr ($_POST['text'], -2, 1);
+    $post = mb_convert_case($_POST['text'], MB_CASE_TITLE);
+    if (in_array($post, $towns)) {
+    if (mb_substr ($post, -1) == 'ь' || mb_substr ($post, -1) == 'ъ' || mb_substr ($post, -1) == 'ы') {
+        $text = mb_substr ($post, -2, 1);
         $text = mb_strtoupper ($text);
         $town = goroda ($all, $text);
     } else {
-        $text = mb_substr ($_POST['text'], -1);
+        $text = mb_substr ($post, -1);
         $text = mb_strtoupper ($text);
         $town = goroda ($all, $text);
     }
@@ -44,6 +46,9 @@ if (isset ($_POST['text'])) {
         $allert = 'Ошибка!';
     } else {
         $msg = 'Играем дальше!';
+    }
+    } else {
+    $allert = 'Это не город России!';
     }
 } else {
     $text = 'букву X';
