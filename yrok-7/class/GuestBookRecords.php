@@ -9,7 +9,7 @@ class GuestBookRecords
         $this->text = $text;
     }
 
-    public function getAllText()
+    public function getText()
     {
         return $this->text;
     }

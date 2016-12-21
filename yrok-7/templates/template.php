@@ -14,7 +14,7 @@ foreach ($this->data['record'] as $text) {
     ?>
     <p>
         <?php
-        echo $text->getAllText();
+        echo $text->getText();
         ?>
     </p>
     <?php
