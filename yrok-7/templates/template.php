@@ -20,6 +20,7 @@ foreach ($this->data['record'] as $text) {
     <?php
 }
 ?>
+
 <form method="post" action="">
     <input type="text" name="text">
     <input type="submit">

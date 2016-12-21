@@ -16,5 +16,4 @@ class Record extends GuestBook
         file_put_contents($this->link, $put);
     }
 
-
 }

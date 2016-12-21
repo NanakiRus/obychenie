@@ -13,5 +13,4 @@ class GuestBookRecords
     {
         return $this->text;
     }
-
 }
