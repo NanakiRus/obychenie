@@ -32,5 +32,9 @@ foreach ($this->data['record'] as $text) {
     <input type="file" name="img">
     <input type="submit" >
 </form>
+
+<h3>Задание - 3</h3>
+<a href="/obychenie/yrok-7/news.php">Список новостей</a>
+
 </body>
 </html>

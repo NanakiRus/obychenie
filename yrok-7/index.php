@@ -4,6 +4,8 @@ require __DIR__ . '/class/GuestBook.php';
 require __DIR__ . '/class/Record.php';
 require __DIR__ . '/class/GuestBookRecords.php';
 require __DIR__ . '/class/View.php';
+require __DIR__ . '/class/Article.php';
+require __DIR__ . '/class/News.php';
 
 $guestBook = new Record(__DIR__ . '/data/text.txt');
 
@@ -23,4 +25,4 @@ $field = 'img';
 $uploader = new Uploader($field);
 $path = __DIR__ . '/upload/';
 $uploader->upload($path);
-?>
+
