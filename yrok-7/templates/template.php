@@ -28,16 +28,6 @@ foreach ($this->data['record'] as $text) {
 
 <h2>Задание - 2</h2>
 
-<?php
-require __DIR__ . '/UploaderClass.php';
-
-$field = 'img';
-
-$uploader = new Uploader($field);
-$path = __DIR__ . '/';
-$uploader->upload($path);
-?>
-
 <form method="post" enctype="multipart/form-data">
     <input type="file" name="img">
     <input type="submit" >
