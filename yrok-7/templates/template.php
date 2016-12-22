@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="ru">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Урок - 7</title>
@@ -30,7 +30,7 @@ foreach ($this->data['record'] as $text) {
 
 <form method="post" enctype="multipart/form-data">
     <input type="file" name="img">
-    <input type="submit" >
+    <input type="submit">
 </form>
 
 <h3>Задание - 3</h3>
