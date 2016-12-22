@@ -9,10 +9,8 @@
 </head>
 <body>
 <article>
-    <h1></h1>
-    <?php
-    var_dump($_GET['id']);
-    ?>
+    <h1><?php echo $this->data['article'][$_GET['id']]->returnHeader(); ?></h1>
+    <?php echo $this->data['article'][$_GET['id']]->returnArticle(); ?>
 </article>
 
 </body>
