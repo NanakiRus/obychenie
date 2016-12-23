@@ -20,4 +20,13 @@ class News
         return $this->objArr;
     }
 
+    public function getDataById($id)
+    {
+        if (isset($this->objArr[$id])) {
+            return $this->objArr[$id];
+        } else {
+            return false;
+        }
+    }
+
 }
