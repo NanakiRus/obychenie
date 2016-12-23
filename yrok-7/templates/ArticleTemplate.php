@@ -9,8 +9,8 @@
 </head>
 <body>
 <article>
-    <h1><?php echo $this->data['article'][$_GET['id']]->returnHeader(); ?></h1>
-    <?php echo $this->data['article'][$_GET['id']]->returnArticle(); ?>
+    <h1><?php echo $this->data['article']->returnHeader(); ?></h1>
+    <?php echo $this->data['article']->returnArticle(); ?>
 </article>
 
 </body>
