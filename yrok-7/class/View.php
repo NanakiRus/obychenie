@@ -16,6 +16,10 @@ class View
 
     public function render($template)
     {
-        return $template;
+        ob_start();
+        include $template;
+        $res = ob_get_contents();
+        ob_end_clean();
+        return $res;
     }
 }
